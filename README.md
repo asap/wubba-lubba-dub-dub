@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Rick and Morty Search
 Gettin' Schwifty with TypeScript and React using the [Rick and Morty API](https://rickandmortyapi.com/)
 
+DEMO: [https://wubba-lubba.herokuapp.com/](https://wubba-lubba.herokuapp.com/)
+
 ## Getting Started
 
 * Clone the project
