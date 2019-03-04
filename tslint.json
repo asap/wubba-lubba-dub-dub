@@ -1,0 +1,13 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "quotemark": [true, "single"],
+  },
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}

@@ -1,5 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Rick and Morty Search
+Gettin' Schwifty with TypeScript and React using the [Rick and Morty API](https://rickandmortyapi.com/)
+
+## Getting Started
+
+* Clone the project
+* run `npm install` in the root
+* run `npm start` to run
+
+## Notes
+
+I kept this simple by bootstrapping through Create React App but tried to use TypeScript as best as I could.
+
+My assumption was that this app should just filter results on the client side, rather than search directly on the server. At present, the API only supports 20 records at a time for their default `/character` endpoint. I came up with a crafty way to grab the first 200 without having to make frequent requests.
+
+The API does support server-side filtering so I considered using that as a way to search a broader catalog of records. However, this might get us rate-limited and I don't want to hammer them.
+
+In an ideal world, I would consider refactoring to query an external api rather than filtering locally, but use a debounce to limit trips to the server. As an alternative, we could also iterate for every page on the server, and store the entire list of records in state. Then we could filter through everything client side.
+
 ## Available Scripts
 
 In the project directory, you can run:
